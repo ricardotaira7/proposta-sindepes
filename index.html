@@ -2,145 +2,204 @@
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
-<title>Proposta 2 – Suporte Técnico Especializado em Infraestrutura e Manutenção</title>
+<title>Proposta 1 – Gestão Completa de Comunicação e Operação Técnica</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
+
 :root{
-  --azul-escuro:#0b2c4d;
-  --azul:#0d4fa3;
-  --azul-claro:#eaf2fb;
-  --branco:#fff;
-  --cinza:#4a4a4a;
-  --verde:#0f7a36;
+--azul-escuro:#0b2c4d;
+--azul:#0d4fa3;
+--azul-claro:#eaf2fb;
+--branco:#fff;
+--cinza:#4a4a4a;
+--verde:#0f7a36;
 }
 
-*{margin:0;padding:0;box-sizing:border-box;font-family:Segoe UI,Arial,sans-serif;}
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI,Arial,sans-serif;
+}
 
 body{
-  background:var(--azul-claro);
-  color:var(--cinza);
-  line-height:1.7;
+background:var(--azul-claro);
+color:var(--cinza);
+line-height:1.7;
 }
 
 header{
-  background:linear-gradient(135deg,var(--azul-escuro),var(--azul));
-  color:var(--branco);
-  padding:90px 20px;
-  text-align:center;
+background:linear-gradient(135deg,var(--azul-escuro),var(--azul));
+color:#fff;
+padding:90px 20px;
+text-align:center;
 }
 
 header h1{
-  font-size:2.4rem;
-  margin-bottom:18px;
+font-size:2.5rem;
+margin-bottom:18px;
 }
 
 header p{
-  max-width:900px;
-  margin:auto;
-  font-size:1.15rem;
-  opacity:.95;
+max-width:900px;
+margin:auto;
+font-size:1.15rem;
+opacity:.95;
 }
 
 section{
-  max-width:1150px;
-  margin:80px auto;
-  padding:0 20px;
+max-width:1150px;
+margin:80px auto;
+padding:0 20px;
 }
 
 .card{
-  background:var(--branco);
-  border-radius:20px;
-  padding:55px;
-  margin-bottom:50px;
-  box-shadow:0 25px 55px rgba(0,0,0,.08);
-  transition:.4s;
+background:#fff;
+border-radius:20px;
+padding:55px;
+margin-bottom:50px;
+box-shadow:0 25px 55px rgba(0,0,0,.08);
+transition:.4s;
 }
 
 .card:hover{
-  transform:translateY(-6px);
-  box-shadow:0 35px 70px rgba(0,0,0,.12);
+transform:translateY(-6px);
+box-shadow:0 35px 70px rgba(0,0,0,.12);
 }
 
 h2{
-  color:var(--azul);
-  font-size:1.9rem;
-  margin-bottom:20px;
-  position:relative;
-  display:inline-block;
+color:var(--azul);
+font-size:1.95rem;
+margin-bottom:20px;
+position:relative;
+display:inline-block;
 }
 
 h2::after{
-  content:"";
-  display:block;
-  height:4px;
-  width:0;
-  background:linear-gradient(90deg,var(--azul),#4fa3ff);
-  margin-top:8px;
-  border-radius:3px;
-  transition:width 1s ease;
+content:"";
+display:block;
+height:4px;
+width:0;
+background:linear-gradient(90deg,var(--azul),#4fa3ff);
+margin-top:10px;
+border-radius:3px;
+transition:width 1s ease;
 }
 
-.show h2::after{width:100%;}
+.show h2::after{
+width:100%;
+}
 
-ul{margin-top:20px;padding-left:22px;}
-li{margin-bottom:12px;}
+ul{
+margin-top:20px;
+padding-left:22px;
+}
+
+li{
+margin-bottom:12px;
+}
 
 .highlight{
-  background:linear-gradient(135deg,#f5f9ff,#e2edff);
-  padding:20px;
-  border-radius:15px;
-  margin-top:20px;
+background:linear-gradient(135deg,#f5f9ff,#e2edff);
+padding:20px;
+border-radius:15px;
+margin-top:20px;
+}
+
+.grid{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:25px;
+margin-top:35px;
+}
+
+.box{
+background:linear-gradient(135deg,#f5f9ff,#e2edff);
+border-radius:18px;
+padding:30px;
+text-align:center;
+box-shadow:0 15px 35px rgba(0,0,0,.08);
+transition:.4s;
+width:260px;
+}
+
+.box:hover{
+transform:translateY(-8px);
+}
+
+.box h3{
+color:var(--azul);
+margin-bottom:12px;
 }
 
 .economia{
-  background:#e9f7ef;
-  padding:25px;
-  border-radius:15px;
-  margin-top:25px;
+background:#e9f7ef;
+padding:25px;
+border-radius:15px;
+margin-top:25px;
 }
 
 .economia strong{
-  color:var(--verde);
-  font-size:1.2rem;
+color:var(--verde);
+font-size:1.2rem;
 }
 
 .animate{
-  opacity:0;
-  transform:translateY(40px);
-  transition:.9s ease;
+opacity:0;
+transform:translateY(40px);
+transition:.9s ease;
 }
 
 .animate.show{
-  opacity:1;
-  transform:translateY(0);
+opacity:1;
+transform:translateY(0);
 }
 
 footer{
-  background:var(--azul-escuro);
-  color:#fff;
-  text-align:center;
-  padding:45px 20px;
-  margin-top:80px;
+background:var(--azul-escuro);
+color:#fff;
+text-align:center;
+padding:45px 20px;
+margin-top:80px;
 }
 
 @media(max-width:768px){
-  header h1{font-size:1.8rem;}
-  .card{padding:30px;}
+
+header h1{
+font-size:1.8rem;
 }
+
+.card{
+padding:30px;
+}
+
+.grid{
+flex-direction:column;
+align-items:center;
+}
+
+.box{
+width:100%;
+}
+
+}
+
 </style>
 </head>
 
 <body>
 
 <header class="animate">
-  <h1>Proposta 2 – Suporte Técnico Especializado em Infraestrutura e Manutenção</h1>
-  <p>Serviços técnicos voltados para suporte em informática, infraestrutura elétrica e manutenção preventiva da estrutura técnica.</p>
+<h1>Proposta 1 – Gestão Completa de Comunicação e Operação Técnica</h1>
+<p>Solução integrada para comunicação institucional, marketing digital, suporte técnico e operação de auditório.</p>
 </header>
 
 <section>
 
 <div class="card animate">
+
 <h2>Modelo de Contratação</h2>
 
 <ul>
@@ -151,7 +210,7 @@ footer{
 </ul>
 
 <div class="highlight">
-Modelo híbrido: previsibilidade financeira com flexibilidade para demandas adicionais.
+Modelo híbrido: previsibilidade financeira com flexibilidade operacional.
 </div>
 
 </div>
@@ -162,60 +221,31 @@ Modelo híbrido: previsibilidade financeira com flexibilidade para demandas adic
 <h2>Plano Mensal Fixo</h2>
 
 <div class="highlight">
-<strong>Valor mensal: R$ 1.200,00</strong><br>
-Atendimento realizado em horário comercial e suporte sob demanda quando necessário.
+<strong>Valor mensal: R$ 1.700,00</strong><br>
+Atendimento contínuo em comunicação, marketing e suporte técnico.
 </div>
 
 <ul>
 
-<li><strong>Suporte completo em informática</strong><br>
-Manutenção, diagnóstico e correção de falhas em computadores e notebooks.</li>
+<li>Gestão completa de redes sociais</li>
 
-<li>Organização e manutenção da rede de internet</li>
+<li>Criação de artes gráficas para posts, banners, panfletos e materiais institucionais</li>
 
-<li>Formatação e reinstalação de sistemas operacionais quando necessário</li>
+<li>Edição e organização de documentos institucionais em PDF</li>
 
-<li>Limpeza preventiva de computadores e notebooks</li>
+<li>Planejamento de conteúdo digital</li>
 
-<li>Otimização e prevenção de falhas no sistema</li>
+<li>Atendimento a comentários e interações nas redes sociais</li>
 
-<li>Organização e prevenção de perda de dados com estruturação de backup em nuvem</li>
+<li>Suporte técnico em informática</li>
 
-<li><strong>Suporte elétrico interno</strong><br>
-Verificação de tomadas, iluminação, cabos e pequenos ajustes elétricos.</li>
+<li>Suporte elétrico e manutenção básica da infraestrutura</li>
 
 <li>Manutenção preventiva do auditório</li>
 
-<li>Reparo de cabos, ajustes de fios, conexões e soldas quando necessário</li>
-
-<li>Ajustes técnicos de equipamentos e rede utilizados no auditório</li>
-
-<li><strong>Operação de 1 evento no auditório por mês</strong><br>
-Incluso 1 turno: manhã, tarde ou noite.</li>
+<li>Apoio técnico em eventos institucionais</li>
 
 </ul>
-
-</div>
-
-
-<div class="card animate">
-
-<h2>Eventos do Auditório</h2>
-
-<ul>
-<li>1 evento mensal incluso no plano (1 turno)</li>
-<li>Turnos disponíveis: manhã, tarde ou noite</li>
-</ul>
-
-<div class="highlight">
-Caso o evento ultrapasse um turno e seja necessária operação em período integral,
-será acrescido o valor de <strong>R$ 300,00</strong>.
-</div>
-
-<div class="highlight">
-Eventos adicionais no auditório serão cobrados no valor de
-<strong>R$ 600,00 por diária</strong>.
-</div>
 
 </div>
 
@@ -224,15 +254,26 @@ Eventos adicionais no auditório serão cobrados no valor de
 
 <h2>Serviços Sob Demanda</h2>
 
-<ul>
-<li>Troca de equipamentos ou peças danificadas que não possam ser recuperadas</li>
-<li>Substituição de componentes elétricos ou de informática</li>
-<li>Aquisição e instalação de novos dispositivos</li>
-</ul>
+<div class="grid">
 
-<div class="highlight">
-O plano mensal contempla exclusivamente mão de obra técnica, manutenção corretiva e preventiva,
-ajustes e consertos. Peças, equipamentos novos ou substituições estruturais serão orçadas separadamente.
+<div class="box">
+<h3>Operação de Auditório</h3>
+<p><strong>R$ 600</strong> por diária</p>
+<p>Equipe técnica para operação de som e suporte durante eventos.</p>
+</div>
+
+<div class="box">
+<h3>Tráfego Pago</h3>
+<p><strong>R$ 350</strong> gestão</p>
+<p>Criação e gerenciamento de campanhas patrocinadas.</p>
+</div>
+
+<div class="box">
+<h3>Fotografia Profissional</h3>
+<p><strong>R$ 650</strong></p>
+<p>Cobertura profissional para eventos institucionais.</p>
+</div>
+
 </div>
 
 </div>
@@ -243,15 +284,20 @@ ajustes e consertos. Peças, equipamentos novos ou substituições estruturais s
 <h2>Diferenciais Estratégicos</h2>
 
 <ul>
+
 <li>Atendimento ágil e centralizado</li>
+
 <li>Rapidez na execução das demandas</li>
-<li>Conhecimento aprofundado do funcionamento interno da estrutura</li>
-<li>Prevenção estratégica de falhas técnicas</li>
+
+<li>Conhecimento prévio da estrutura e funcionamento do local</li>
+
+<li>Integração entre comunicação, marketing e operação técnica</li>
+
 </ul>
 
 <div class="highlight">
-Continuidade operacional com profissional que já conhece toda a infraestrutura,
-reduzindo falhas, retrabalho e tempo de diagnóstico.
+Continuidade operacional com profissional que já conhece a estrutura,
+reduzindo tempo de diagnóstico e resolução de problemas.
 </div>
 
 </div>
@@ -259,19 +305,18 @@ reduzindo falhas, retrabalho e tempo de diagnóstico.
 
 <div class="card animate">
 
-<h2>Economia e Benefícios Operacionais</h2>
-
-<ul>
-<li>Redução da necessidade de contratação de múltiplos fornecedores técnicos</li>
-<li>Menor tempo de parada em caso de falhas técnicas</li>
-<li>Prevenção de perda de dados e problemas operacionais</li>
-<li>Manutenção preventiva evitando custos maiores com substituições futuras</li>
-<li>Continuidade técnica com profissional que já conhece toda a estrutura</li>
-</ul>
+<h2>Economia Gerada</h2>
 
 <div class="economia">
-<p><strong>Centralização técnica = mais agilidade, menos falhas e melhor controle de custos.</strong></p>
-<p>Com suporte técnico contínuo, problemas são resolvidos com rapidez e muitas falhas são evitadas antes mesmo de acontecer.</p>
+
+<p>Operação de som: <s>R$ 800</s> → <strong>R$ 600</strong></p>
+
+<p>Gestão de tráfego pago: <s>R$ 700</s> → <strong>R$ 350</strong></p>
+
+<p>Fotografia profissional: <s>R$ 900</s> → <strong>R$ 650</strong></p>
+
+<p>Registro simples incluso na operação do auditório.</p>
+
 </div>
 
 </div>
@@ -283,6 +328,7 @@ Proposta apresentada por Ricardo Taira
 </footer>
 
 <script>
+
 const observer=new IntersectionObserver(entries=>{
 entries.forEach(e=>{
 if(e.isIntersecting){
@@ -292,6 +338,7 @@ e.target.classList.add('show');
 },{threshold:.2});
 
 document.querySelectorAll('.animate').forEach(el=>observer.observe(el));
+
 </script>
 
 </body>
